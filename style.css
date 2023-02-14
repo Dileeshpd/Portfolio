@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Itim&family=Merriweather&family=Montserrat:ital,wght@0,400;0,700;1,300&family=Oswald:wght@200&family=Sacramento&family=Ubuntu:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;    
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+nav{
+    display: flex;
+    width:84%;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav.logo{
+    width: 130px;}
+.logo{
+    margin-top: 30px;
+    border-radius: 50%;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+    
+}
+/* pseudo classes 
+selector:pseudo-class name{property:value}*/
+nav ul li a:hover{
+    color: red;
+}
+.home{
+    width: 100%;
+    height:400px;
+    position: relative;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.title h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+.title span{
+    color: orange;
+}
+.title p{
+    color: #555;
+    line-height: 22px;
+
+}
+.title a {
+    background-color: black;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5%;
+}
+.images{
+    width: 55%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+
+}
+.images:hover .shape{
+    bottom: 70%;
+}
+.images:hover .girl{
+    left:30%;
+}
+#about{
+    margin-left: 8%;
+    margin-top: 8%;
+    margin-right: 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+
+}
+.heading span{
+    font-size: 20px;
+    color: green;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.about-img img{
+    width: 80%;
+    border-radius: 0.5rem;
+}
+.about-text{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+.information{
+    margin: 1rem 0 1.4rem;
+
+}
+.information .info-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.information .info-box span{
+    font-weight: 400;
+    margin-left: 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#skill{
+    margin-left: 8%;
+    margin-top: 5%;
+    margin-right: 8%;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.skill-img img{
+    width: 80%;
+    object-position: center;
+    padding-left: 4rem;
+}
+.bar-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+
+}
+.bar-box h3,span{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.light-bar{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background-color: aqua;
+    border-radius:0.5rem;
+}
+.percent-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: .5rem;
+    width: 100%;
+    background-color: rgb(18, 18, 235);
+    border-radius: 0.5rem;
+}
+.html-bar{
+    width:95%;
+}
+.css-bar{
+
+    width:93%;
+}
+.js-bar{
+    
+    width: 90%;
+}
+.react-bar{
+    width:85% ;
+}
+#contact{
+    margin-left: 8%;
+    margin-top: 8%;
+    margin-right: 8%;
+}
+.iconDiv{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.icon{
+   width: 50px;
+   height: 50px;
+   /* border: 1px solid; */
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 10px;
+}
+.icon i{
+    font-size: 20px;
+}
+.icon:hover{
+    background-color: blue;
+    color: white;
+}
+
+.up-arrow{
+    margin: 1rem 2rem;
+    float: right;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet; 
+
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: aqua;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+
+}
+
+
